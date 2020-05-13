@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import AngleCalculator from './Components/AngleCalculator/AngleCalculator';
+import SpeedCalculator from './Components/SpeedCalculator/SpeedCalculator';
+import { calculateAngle, calculateSpeed } from './Math/Math';
 
-function App() {
+export default function App() {
+  const [bowAngleCalculations, setBowAngleCalculations] = React.useState({});
+  let { targetMastHeight, targetLength, angularMast, angularLength, zoom } = bowAngleCalculations;
+  
+  // Hardcoded 4.
+  let calculatedAngle = calculateAngle(targetMastHeight, targetLength, angularMast, angularLength, zoom);
+
+
+  const [speedCalculations, setSpeedCalculations] = React.useState({});
+  let { lineOfSightAngle, angleOnBow, subSpeed, timeToCross } = speedCalculations;
+  let calculatedSpeed = calculateSpeed(lineOfSightAngle, angleOnBow, subSpeed, timeToCross, targetLength);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AngleCalculator setBowAngleCalculations={setBowAngleCalculations} bowAngleCalculations={bowAngleCalculations} calculatedAngle={calculatedAngle} />
+      <SpeedCalculator setSpeedCalculations={setSpeedCalculations} speedCalculations={speedCalculations} calculatedSpeed={calculatedSpeed} targetLength={targetLength} />
     </div>
   );
 }
-
-export default App;

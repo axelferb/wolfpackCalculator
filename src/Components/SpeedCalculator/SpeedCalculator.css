@@ -1,0 +1,14 @@
+.speedCalculatorContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background: rgb(54, 54, 54);
+}
+
+.speedCalculatorContainer label {
+  color: red;
+}
+
+.speedCalculatorContainer label, input {
+  font-size: 2em;
+}

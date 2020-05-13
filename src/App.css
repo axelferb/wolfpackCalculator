@@ -1,38 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+body {
+  margin: 0;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 15px;
+  font-family: 'Source Code Pro', monospace;
+  background: url(https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/p960x960/40675202_1968278429859921_5405245354520084480_o.jpg?_nc_cat=104&_nc_sid=85a577&_nc_ohc=GvXf52rj770AX_6hYGO&_nc_ht=scontent-arn2-1.xx&_nc_tp=6&oh=32a41e92c13cce7012ee5b1841b57e76&oe=5EE307F9);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 30px);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.resultNumber {
+  width: 100%;
+  text-align: center;
+  font-size: 3em;
+  text-decoration: underline;
+  color: red;
 }
