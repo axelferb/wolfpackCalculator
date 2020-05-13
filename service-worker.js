@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/wolfpackCalculator/precache-manifest.b5b7d7410b396ce680c222d37e27030c.js"
+  "/wolfpackCalculator/precache-manifest.ae96ac2d0f21668f9f0aed2f6cd18e9c.js"
 );
 
 self.addEventListener('message', (event) => {

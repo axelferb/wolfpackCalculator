@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "13089f2af702080a170dbb81a1c5e77d",
+    "revision": "4e8a8a25862e85beed593e87f46a0be4",
     "url": "/wolfpackCalculator/index.html"
   },
   {
-    "revision": "5a9f86450af85db66dc1",
+    "revision": "7822659692115477a797",
     "url": "/wolfpackCalculator/static/css/main.45dd3c87.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/wolfpackCalculator/static/js/2.4c129853.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5a9f86450af85db66dc1",
-    "url": "/wolfpackCalculator/static/js/main.832800d4.chunk.js"
+    "revision": "7822659692115477a797",
+    "url": "/wolfpackCalculator/static/js/main.a346bff2.chunk.js"
   },
   {
     "revision": "94e0678c2d08d7d8a68b",
