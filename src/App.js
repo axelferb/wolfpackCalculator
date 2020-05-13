@@ -19,7 +19,7 @@ export default function App() {
   return (
     <div className="App">
       <AngleCalculator setBowAngleCalculations={setBowAngleCalculations} bowAngleCalculations={bowAngleCalculations} calculatedAngle={calculatedAngle} />
-      <SpeedCalculator setSpeedCalculations={setSpeedCalculations} speedCalculations={speedCalculations} calculatedSpeed={calculatedSpeed} targetLength={targetLength} />
+      <SpeedCalculator setSpeedCalculations={setSpeedCalculations} speedCalculations={speedCalculations} calculatedSpeed={calculatedSpeed} targetLength={targetLength} calculatedAngle={calculatedAngle} />
     </div>
   );
 }
