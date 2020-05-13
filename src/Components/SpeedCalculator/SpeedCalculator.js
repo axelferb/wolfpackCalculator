@@ -9,7 +9,6 @@ export default function SpeedCalculator(props) {
   }
 
   const checkIfAngleExists = () => {
-    console.group(!calculatedAngle ? calculatedAngle = undefined : calculatedAngle)
     return !calculatedAngle.bowAngle ? calculatedAngle.bowAngle = undefined : calculatedAngle.bowAngle;
   }
 
