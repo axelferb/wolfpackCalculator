@@ -13,8 +13,8 @@ export default function App() {
 
 
   const [speedCalculations, setSpeedCalculations] = React.useState({});
-  let { lineOfSightAngle, angleOnBow, subSpeed, timeToCross } = speedCalculations;
-  let calculatedSpeed = calculateSpeed(lineOfSightAngle, angleOnBow, subSpeed, timeToCross, targetLength);
+  let { lineOfSightAngle, subSpeed, timeToCross } = speedCalculations;
+  let calculatedSpeed = calculateSpeed(lineOfSightAngle, calculatedAngle.bowAngle, subSpeed, timeToCross, targetLength);
 
   return (
     <div className="App">

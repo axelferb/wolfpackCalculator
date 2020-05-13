@@ -17,7 +17,6 @@ export default function SpeedCalculator(props) {
       ...speedCalculations,
       [evt.target.name]: parseFloat(evt.target.value)
     });
-    // Use default unless told otherwise.
   }
 
   return (
